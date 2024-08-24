@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Text("© iSAD"),
-));
+  debugShowCheckedModeBanner: false,
+  home:
+  Center(
+    child:
+    Text("© iSAD")
+  ,)
+  ,)
+);
