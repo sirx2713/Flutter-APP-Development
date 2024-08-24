@@ -9,7 +9,10 @@ void main() {
           title: Text("© iSAD"),
         backgroundColor: Colors.green,
       ),
-      body: Image(image: AssetImage('images/logo.png'),
+      body: Center(
+        child: Image(
+          image: AssetImage('images/logo.png'),
+        ),
       ),
     ),
   )
