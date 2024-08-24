@@ -3,17 +3,20 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Scaffold(
+    home:
+    Scaffold(
+      backgroundColor: Colors.teal,
       appBar: AppBar(
-        backgroundColor: Colors.green,
         title: Text("© iSAD"),
+        backgroundColor: Colors.teal,
       ),
-      backgroundColor: Colors.green,
-      body:
-      Center(
-        child: Column(
+      body: Center(
+        child: 
+        Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [Image(image: AssetImage("images/logo.png")),
+          children: [
+
+            Image(image: AssetImage("images/logo.png")),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [Image(image: AssetImage("images/back.png")), Image(image: AssetImage("images/back.png"))],
@@ -37,10 +40,10 @@ void main() {
                   ],
                 )
               ],
-              
             )
           ],
-        ),
+        )
+        ,
       ),
     ),
   ));
