@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-  debugShowCheckedModeBanner: false,
-  home:
-  Center(
-    child:
-    Text("© iSAD")
-  ,)
-  ,)
-);
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      appBar: AppBar(
+          title: Text("War Game"),
+        backgroundColor: Colors.green,
+      ),
+    ),
+  )
+  );
+}
