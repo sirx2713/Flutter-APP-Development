@@ -4,18 +4,44 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold(
-      backgroundColor: Colors.green,
       appBar: AppBar(
-          title: Text("© iSAD"),
         backgroundColor: Colors.green,
+        title: Text("© iSAD"),
       ),
-      body: Center(
-        child: Image(
-          image: AssetImage('images/logo.png'),
-          //image: AssetImage('images/back.png'),
+      backgroundColor: Colors.green,
+      body:
+      Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [Image(image: AssetImage("images/logo.png")),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [Image(image: AssetImage("images/back.png")), Image(image: AssetImage("images/back.png"))],
+          ),
+            Image(image: AssetImage("images/button.png")),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Player"),
+                    Text("0")
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("CPU"),
+                    Text("0")
+                  ],
+                )
+              ],
+              
+            )
+          ],
         ),
       ),
     ),
-  )
-  );
+  ));
 }
