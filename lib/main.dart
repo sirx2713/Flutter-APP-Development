@@ -12,6 +12,7 @@ void main() {
       body: Center(
         child: Image(
           image: AssetImage('images/logo.png'),
+          //image: AssetImage('images/back.png'),
         ),
       ),
     ),
